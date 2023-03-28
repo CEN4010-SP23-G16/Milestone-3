@@ -1,7 +1,7 @@
 .background {
     background-image: url("/public/assets/sunset2.jpg");
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,19 +14,9 @@
     -ms-animation: fadeIn 2s;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
-p {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: large;
-    font-weight: lighter;
-    font-family: 'Barlow', sans-serif;
-    padding-top: 30px;
-    line-height: 200%;
-}
 
-.search {
+.searchDiv {
     text-align: center;
     padding: 10.61rem;
     position: relative;
@@ -36,6 +26,18 @@ p {
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
     -ms-animation: fadeIn 5s;
+}
+
+/* Search Button */
+.searchButton{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: #000000;
+}
+.searchButton:hover{
+    background: rgba(255, 255, 255, 0.1);
 }
 
 input {
@@ -55,8 +57,7 @@ input {
 .icon {
     color: rgba(255, 255, 255, 0.8);
     font-size: 28px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin: 5px 5px;
 }
 
 .settingicon {
@@ -65,10 +66,6 @@ input {
     margin-right: -2rem;
 }
 
-.fontstyle {
-    font-family: 'Barlow', sans-serif;
-
-}
 
 .logo {
     background-image: url("/public/assets/ClimateSmart\ -\ Logo.png");
