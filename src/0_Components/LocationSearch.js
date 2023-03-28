@@ -8,13 +8,16 @@ export default function LocationSearch() {
   const navigate = useNavigate();
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=ea2ebba4214c311f36ba1cc2619ed14b`;
+  const forcastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=imperial&appid=ea2ebba4214c311f36ba1cc2619ed14b`;
 
   const searchLocation = () => {
-    axios.get(url).then((response) => {
+    axios.get(url)
+      .then((response) => {
       console.log('Data from API:', response.data);
       navigate(`/weather?location=${location}`, { state: response.data });
     });
     setLocation('');
+    
   };
   
 
@@ -26,7 +29,7 @@ export default function LocationSearch() {
   
   return (
     <>
-      
+      <h2>Enter Location</h2>
       <input
         type='text'
         placeholder='Enter location'

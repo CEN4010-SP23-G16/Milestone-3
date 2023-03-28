@@ -12,7 +12,7 @@ export default function HomePage() {
         <Container>
           <div className='logo'></div>
 
-          <div className='searchDiv'>
+          <div className='divAnimation'>
             
             <LocationSearch/>
 

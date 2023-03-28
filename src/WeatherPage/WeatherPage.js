@@ -13,12 +13,14 @@ const WeatherPage = () => {
     <div className='bgweather'>
       <div>
         <Container>
-          <div className='searchDiv'>
+          <div className='divAnimation'>
             {location.state ? (
             <Info/>
-            ) : <>
-                  <LocationSearch location={location} />
-                </>}
+            ) :
+              <>
+                <LocationSearch location={location} />
+              </>
+            }
           </div>
           
         </Container>

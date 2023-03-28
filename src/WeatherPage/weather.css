@@ -1,5 +1,6 @@
 .bgweather {
     background-image: url("/public/assets/rainy.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
     background-position: center;
@@ -38,11 +39,9 @@ h1, h2 {
     margin-bottom: 5px;
 }
 
-.searchDiv {
+.divAnimation {
     text-align: center;
-    padding: 10.61rem;
     position: relative;
-
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
